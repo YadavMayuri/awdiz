@@ -33,3 +33,31 @@ th{
 
 
 }
+
+.main-content{
+    display: flex;
+}
+.left-main{
+    width: 40%;
+    height: 100%;
+    margin: 8px;
+    padding-top: 10px;
+}
+.right-main{
+    
+    width: 60%;
+    height:100% ;
+    margin: 8px;
+}
+
+.right-main .aboutme{
+    padding-right: 50px;
+}
+
+.right-main .education{
+    padding-right: 50px;
+}
+
+.right-main .experience{
+    padding-right: 50px;
+}

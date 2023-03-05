@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent>div:nth-child(1)>div:nth-child(3) {
+            color: red;
+
+        }
+
+        #parent>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+            color: red;
+
+        }
+
+        #parent>div:nth-child(2) {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <form action="">
+        <input type="text" value="" required>
+        <input type="submit" value="login" >
+
+    </form> -->
+    <div id="parent">
+
+        <div id="children1">
+            <div id="grandchildren1"></div>
+            <div id="grandchildren2"></div>
+            <div id="grandchildren3">target</div>
+        </div>
+
+        <div id="children2">
+            <div id="grandchildren1">
+
+            </div>
+            <div id="grandchildren2">
+                <div>
+                    <div>target2</div>
+                </div>
+            </div>
+            <div id="grandchildren3">
+                <div>
+                    <div>
+
+                    </div>
+                    <h1>target3</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
