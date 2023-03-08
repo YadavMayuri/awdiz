@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 
     <style>
@@ -37,44 +39,62 @@
         }
 
         #screen>div:nth-child(2)>h1 {
-            font-size: 30px;
+            font-size: 25px;
             margin-bottom: 5px;
         }
 
         #screen>div:nth-child(2)>h4 {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 5px;
         }
-        #screen > div:nth-child(3){
+
+        #screen>div:nth-child(3) {
             width: 50%;
-            border: 5px solid black;
+            border: 4px solid black;
         }
-        #screen > div:nth-child(3)>div{
-            width: 60%;
+
+        #screen>div:nth-child(3)>div {
+            width: 50%;
             margin: auto;
             text-align: center;
-            border: 5px solid black;
-            margin-bottom: 30px;
-            margin-top: 30px;
+            border: 3px solid black;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
-        #screen > div:nth-child(3) > div>img{
+
+        #screen>div:nth-child(3)>div>img {
             width: 100%;
 
         }
-        #screen > div:nth-child(3) > div> h1{
+
+        #screen>div:nth-child(3)>div>h1 {
             font-size: 23px;
         }
-        #screen > div:nth-child(3) > div> p{
-            font-size: 18px;
+
+        #screen>div:nth-child(3)>div>p {
+            font-size: 16px;
         }
-        #screen > div:nth-child(3) >h2{
+
+        #screen>div:nth-child(3)>h2 {
             color: black;
             font-size: 35px;
             text-align: center;
             margin-top: 5px;
         }
+        .contactme fieldset{
+            width: 50%;
+        }
+      
 
+        th,
+        td {
+            border: 1px solid black;
+        }
 
+        th {
+            background-color: lightgray;
+            color: black;
+        }
     </style>
 </head>
 
@@ -87,7 +107,7 @@
             <h1>Mayuri Yadav</h1>
             <h4><i class="fa-solid fa-phone"></i> 9960543298</h4>
             <h4><i class="fa-solid fa-envelope"></i> abc@gmail.com</h4>
-    
+
         </div>
 
         <div>
@@ -95,20 +115,39 @@
             <div>
                 <img src="/images/amezonimg.jpg" alt="">
                 <h1>Amezon</h1>
-                <p>Tech Stack- func...</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus facilis laudantium earum placeat
+                    fugiat inventore aliquam vitae sint, itaque nulla.</p>
             </div>
             <div>
                 <img src="/images/flipkartimg.jpg" alt="">
                 <h1>Amezon</h1>
-                <p>Tech Stack- func...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus non corporis earum
+                    excepturi, id dolorum in modi omnis harum?</p>
             </div>
         </div>
-        <div>form</div>
-        <!-- footer 
-        css box model font size margin auto  text align margin padding required-->
+
+        <div class="contactme">
+            <h1>Contact me</h1><br>
+            <form >
+                <fieldset>
+                    <legend>Send A Query</legend>
+                    <label>Put your Email Address</label><br>
+                    <input type="email" placeholder="abc@gmail.com"><br>
+                    <label for="">Put your Message</label><br>
+                    <input type="text" placeholder="Your Message"><br>
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <br>
+
+        </div>
+
     </div>
-    
+
+    <!-- footer 
+        css box model font size margin auto  text align margin padding required-->
+
 
 </body>
 
-</html> 
+</html>
