@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,96 +10,173 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        #navbar{
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navbar {
             width: 100%;
             height: 70px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: flex;
             justify-content: space-evenly;
+            box-shadow: 0px 1px 14px lightgray;
         }
-        #navbar > div:nth-child(1){
+
+        #navbar>div:nth-child(1) {
             width: 7%;
             height: 100%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
-        #navbar > div:nth-child(2){
+
+        #navbar>div:nth-child(1)>img {
+            width: 100%;
+            height: 100%;
+            margin-left: 15%;
+
+        }
+
+        #navbar>div:nth-child(2) {
             width: 34%;
             height: 100%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
             justify-content: space-between;
             text-align: center;
         }
-        #navbar > div:nth-child(2) > div{
-            width: 15%;
+
+        #navbar>div:nth-child(2)>div {
+            /* width: 15%; */
             height: 100%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
         }
 
-        #navbar > div:nth-child(3){
+        #navbar>div:nth-child(2)>div>h1 {
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            color:rgb(41,41,41) ;
+
+        }
+
+        #navbar>div:nth-child(2)>div> h1 >sup {
+            color: #FF3F6C;
+            font-size: 8px;
+        }
+
+        #navbar>div:nth-child(3) {
             width: 34%;
             height: 100%;
             border: none;
-            
+
         }
-        #navbar > div:nth-child(3) > div:nth-child(1){
-            background-color: rgb(221,218 ,218);
+
+
+        #navbar>div:nth-child(3)>div:nth-child(1) {
+            background-color:#F0F0F0;
             height: 60%;
             margin-top: 15px;
             border-radius: 5px;
+            width: 100%;
         }
-        #navbar > div:nth-child(3) > div:nth-child(1)> i,input{
+
+        #navbar>div:nth-child(3)>div:nth-child(1)>i,
+        input {
             margin-top: 12px;
             margin-left: 15px;
         }
-        #navbar > div:nth-child(3) > div:nth-child(1)> input{
-            background-color: rgb(221,218 ,218);
+
+        #navbar>div:nth-child(3)>div:nth-child(1)>input {
+            background-color: #F0F0F0;
             border: none;
             outline: none;
-            color:rgb(82, 81,81);
+            color: rgb(82, 81, 81);
+            width: 70%;
+            
         }
-        #navbar > div:nth-child(4){
+
+        #navbar>div:nth-child(4) {
             width: 15%;
             height: 100%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             display: flex;
             justify-content: space-around;
             text-align: center;
         }
-        #navbar > div:nth-child(4) > div{
+
+        #navbar>div:nth-child(4)>div {
             width: 28%;
             height: 100%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
         }
+        #navbar>div:nth-child(4)>div > i{
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        #navbar>div:nth-child(4)>div >p{
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: capitalize;
+            
+        }
+
     </style>
 </head>
+
 <body>
     <div id="navbar">
-        <div>logo</div>
         <div>
-            <div>men</div>
-            <div>women </div>
-            <div>kids</div>
-            <div>home & living </div>
-            <div>beauty</div>
-            <div>studio </div>
-               
-           
+            <img src="/images/myntra.jpg" alt="myntra-logo">
+        </div>
+
+        <div>
+            <div>
+                <h1>men</h1>
+            </div>
+            <div>
+                <h1>women</h1>
+            </div>
+            <div>
+                <h1>kids</h1>
+            </div>
+            <div>
+                <h1>home & living </h1>
+            </div>
+            <div>
+                <h1>beauty</h1>
+            </div>
+            <div>
+                <h1>studio <sup>new</sup></h1>
+            </div>
+
+
         </div>
         <div>
             <div>
                 <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search for products, brands and more">
+                <input type="text" placeholder="Search for products, brands and more">
             </div>
         </div>
         <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div>
+                <i class="fa-regular fa-user"></i>
+                <p>profile</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <p> wishlist</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>bag</p>
+            </div>
         </div>
 
 
     </div>
 
 </body>
+
 </html>
