@@ -1,29 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Assistant,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    vertical-align:super;
 }
 
-#screen{
+#screen {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 14px lightgray;
+
 
 }
-
+ /* logo */
 #screen .logo {
     width: 5%;
-    height: 50px;
-} 
-#screen .logo img{
+    height: 45px;
+
+}
+
+#screen .logo img {
     width: 100%;
     height: 100%;
 }
-.nav-link{
+
+/* navlinks */
+.nav-link {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
 }
-.nav-link h1{
-    font-size: 14px;
+
+.nav-link h1 {
+    font-size: 12px;
     text-transform: uppercase;
+    font-weight: 700;
+    color: #282c3f;
+}
+.nav-link sup{
+    color: #FF3F6C;
+    font-size: 8px;
+}
+
+/* search */
+.search {
+   
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F0F0;
+
+
+}
+  
+.search i {
+    width: 15%;
+    color: grey;
+    text-align: center;
+
+
+}
+
+.search input {
+    border: none;
+    width: 85%;
+    background-color: #F0F0F0;
+}
+
+/* icons */
+.main-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+
+}
+
+.main-icons .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #282c3f;
+
+}
+
+.icons p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #282c3f;
 }
