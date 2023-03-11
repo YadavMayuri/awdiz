@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>day-9-resume</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #screen{
+            width: 100%;
+            height: 730px;
+            /* border: 5px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        #screen > div:nth-child(1){
+            /* border: 2px solid black; */
+            height: 100%;
+            width: 30%;
+            background: ;
+            background-color:#c8bcac;
+            /* color: white; */
+
+
+
+        }
+        #screen > div:nth-child(1) > div:nth-child(1){
+            width: 80%;
+            height: 140px;
+            /* border: 2px solid blue; */
+            margin-top: 20px;
+            margin:  20px auto;
+        }
+        #screen > div:nth-child(1) > div:nth-child(1) >img{
+            height: 100%;
+            width: 60%;
+            padding-left: 60px;
+        }
+
+        #screen > div:nth-child(2){
+            width: 60%;
+        }
+        .icons{
+            border-bottom: 2px solid black;
+            width: 80%;
+            height: 80px;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+        .icons > div{
+            display: flex;
+            /* border: 1px solid pink; */
+            margin-top: 5px;
+            
+        }
+        .icons > div >p{
+            margin-left: 10px;
+        }
+         #thirddiv{
+            width: 80%;
+            height: 150px;
+            border-bottom: 2px solid black;
+            margin: auto;
+
+         }
+         #thirddiv > p{
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            
+         }
+         #thirddiv > div > ul{
+            margin-left: 18px;
+            margin-top: 5px;
+
+         }
+         .education{
+            width: 80%;
+            height: 118px;
+            border-bottom: 2px solid black;
+            margin: auto;
+            margin-top: 20px;
+         }
+         .education > p:nth-child(1){
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
+         .education > p:nth-child(2){
+            font-size: 18px;
+            font-weight: bold;
+         }
+         .certifications{
+            width: 80%;
+            height: 80px;
+            /* border: 2px solid black; */
+            margin: 20px auto;
+         }
+         .certifications p{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
+         .certifications > div > ul{
+            margin-left: 20px;
+            margin-top: 8px;
+         }
+         .name{
+            width: 100%;
+            height: 70px;
+            border-bottom: 2px solid #c8bcac;
+
+         }
+         .name > h1{
+            font-size: 40px;
+            margin-top: 30px;
+            color: #c8bcac;
+         }
+         .summary{
+            width: 100%;
+            height: 100px;
+            border-bottom: 2px solid #c8bcac;
+         }
+         .summary > p:nth-child(1){
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 8px;
+         }
+         .summary > p:nth-child(2){
+            margin-top: 8px;
+         }
+         .work{
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid black; */
+         }
+         .work >p:nth-child(1){
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 8px;
+         }
+         .work >p:nth-child(2){
+            margin-top: 8px;
+         }
+         .work >p:nth-child(3){
+            font-size: 18px;
+            font-weight: bold;
+         }
+         .work > div >ul {
+            margin-left: 20px;
+            margin-top: 5px;
+         }
+         
+
+         .work2{
+            width: 100%;
+            height: 140px;
+            /* border: 1px solid black; */
+         }
+        
+         .work2 >p:nth-child(1){
+            margin-top: 8px;
+         }
+         .work2 >p:nth-child(2){
+            font-size: 18px;
+            font-weight: bold;
+         }
+         .work2 > div >ul {
+            margin-left: 20px;
+            margin-top: 5px;
+         }
+
+         .work3{
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid black; */
+         }
+        
+         .work3 >p:nth-child(1){
+            margin-top: 8px;
+         }
+         .work3 >p:nth-child(2){
+            font-size: 18px;
+            font-weight: bold;
+         }
+         .work3 > div >ul {
+            margin-left: 20px;
+            margin-top: 5px;
+         }
+    </style>
+</head>
+<body>
+    
+    <div id="screen">
+        <div>
+            <div>
+                <img src="/images/user1.jpg" alt="">
+            </div>
+
+            <div class="icons">
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                <p>7410735065</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Navi Mumbai</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>mayuri73992gmail.com</p>
+                </div>
+                
+            </div>
+            <div id="thirddiv">
+                <p>skills</p>
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>C# , ASP.NET</li>
+                        <li>SQL</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="education">
+                <p>Education</p>
+                <p>Bachelor of Computer Application |</p>
+                <p>Mathematics</p>
+                    <p>Georgia College And State University,Milledgeville GA</p> 
+            </div>
+
+            <div class="certifications">
+                <p>certifications</p>
+                <div>
+                    <ul>
+                        <li>Valid Georgia's Teaching
+                            License - Georgia
+                            Professional Standards
+                            Commission (GaPSC)</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+            
+
+        <div>
+            <div class="name">
+                <h1>Terrance Ryan</h1>
+            </div>
+
+            <div class="summary">
+                <p>SUMMARY STATEMENT</p>
+                <p>Skilled Math Teacher with innovative and engaging teaching
+                    style demonstrated over seven years of academic
+                    experience. Caring and hardworking professional with
+                    exceptional work ethic and commitment to cultivating
+                    productive learning environments to drive student progress
+                    and comprehension.</p>
+
+            </div>
+            <div class="work">
+                <p>WORK HISTORY</p>
+                <p>September 2018 -  Current</p>
+                <p>High School Math Teacher
+                    Cherokee High School
+                     |</p>
+                <p>Canton
+                    , 
+                    GA</p>
+                <div>
+                    <ul class="list">
+                        <li>Provide meaningful math instruction to improve the math
+                            skills of children.</li>
+                        <li>Assess submitted class assignments, determining grades,
+                            and reviewed work with struggling learners to boost
+                            success chance.</li>
+                        <li>Develop thematic units that incorporated real-world
+                            examples to introduce new materials, consolidate
+                            essential concepts, and encourage 90 pupil learning.</li>
+                    </ul>
+                </div>
+                     
+                  
+            </div>
+            <div class="work2">
+                <p>September 2014
+                    - 
+                   June 2018</p>
+                <p>Math Teaching Assistant
+                    Sequoyah High School
+                     |</p>
+                <p>Canton
+                    , 
+                    GA</p>
+                <div>
+                    <ul >
+                        <li>Took daily attendance, notifying classroom teacher
+                            immediately of any student absences.</li>
+                        <li>Observed 30+ students' performance and recorded
+                            relevant data to assess progress.</li>
+                        <li>Develop thematic units that incorporated real-world
+                            examples to introduce new materials, consolidate
+                            essential concepts, and encourage 90 pupil learning.</li>
+                    </ul>
+                </div>
+                     
+
+
+            </div>
+            <div class="work3">
+                <p>September 2013
+                    - 
+                   June 2014</p>
+                <p>Student Teacher
+                    Sequoyah High School
+                    
+                     |</p>
+                <p>Canton
+                    , 
+                    GA</p>
+                <div>
+                    <ul >
+                        <li>Collaborated with three teachers to devise and implement
+                            coordinated educational strategies and student support
+                            networks.</li>
+                        <li>Prepared and presented daily lesson plans.</li>
+                        <li>Get acquainted with the classroom mentor teacher.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
