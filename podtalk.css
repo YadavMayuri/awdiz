@@ -8,10 +8,11 @@
     background-image: url(/images/bgimg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 80vh;
 }
 .header-section {
     width: 90%;
-    height: 80vh;
+   
     margin: auto;
     /* display: flex;
     justify-content: space-evenly; */
@@ -275,7 +276,7 @@
     width: 40%;
     display: flex;
     justify-content: space-around;
-    border:  2px solid blue;
+    border:  2px solid #30d9d4;
     border-radius: 10px;
     padding: 10px 0px;
 
@@ -334,6 +335,12 @@
     align-items: center;
     
 }
+.info-icons > i{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
 
 .top-info{
     display: flex;
@@ -348,6 +355,9 @@
 .duration{
     display: flex;
     justify-content: space-between;
+}
+.duration > i{
+    color:#33d0a4;
 }
 .duration > p{
     font-size: 14px;
@@ -376,6 +386,7 @@
 }
 .mid-info > h3{
     margin-top: 5px;
+    color: #33d0a4;
 
 }
 .mid-info-2{
@@ -426,6 +437,9 @@
     display: flex;
     justify-content: space-around;
     
+}
+.icon-information > i{
+    color:#33d0a4;
 }
 .icon-information > p{
  margin-left: 5px;
@@ -520,7 +534,7 @@
     border: 1px solid black;
     border: none;
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px 20px;
     background-color: #f0f8ff;
 }
 .trending-topic-cover img{
@@ -546,6 +560,10 @@
     padding: 5px;
     margin: 55px 0px;
 }
+.epi-title{
+    color:#33d0a4 ;
+    margin-bottom: 5px;
+}
 .artist{
     width: 100%;
     display: flex;
@@ -565,8 +583,8 @@
 .artist-detail> span> img{
     margin-left: 5px;
     margin-top: 2px;
-    height:20px; 
-    width: 20px;
+    height:15px; 
+    width: 15px;
 }
 .artist-info{
     width: 70%;
@@ -587,14 +605,200 @@
 }
 .listening{
     display: flex;
+
+}
+.listening >i{
+    color: #33d0a4;
 }
 .likes{
     display: flex;
 }
+.likes > i{
+    color: #33d0a4;
+}
 .comment{
     display: flex;
+}
+.comment > i{
+    color: #33d0a4;
 }
 .downloads{
     display: flex;
 }
+.downloads > i{
+    color: #33d0a4;
+}
 /* **************** */
+
+/* Footer */
+.footer{
+    background-image: url(/images/bgimg2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+
+}
+.footer-container{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form{
+    width: 50%;
+    
+    margin-top: 20px;
+    text-align: center;
+    
+}
+fieldset {
+    background-color: transparent;
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    color: white;
+  }
+  
+legend {
+    background-color: white;
+    color:#33d0a4;
+    padding: 5px 10px;
+    text-align:center;
+    border-radius:20px;
+}
+.contact-inputs{
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-form input{
+    width: 80%;
+   
+
+}
+.contact input[type=email]{
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.contact input[type=submit]{
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0066cc;
+    color: white;
+    /* padding: 5px; */
+    border: none;
+}
+.contact-info{
+    width: 17%;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+.contact-item{
+    display: flex;
+}
+.contact-item >h4{
+    color: white;
+}
+.contact-item> span > p{
+    color: white;
+    
+}
+.contact-item> span{
+    color: white;
+    margin-left: 5px;
+    /* text-decoration: underline; */
+}
+
+.contact-info h2{
+    margin-bottom: 20px;
+    color: white;
+    
+}
+.contact-info p{
+    margin-bottom: 10px;
+}
+.contact-icons{
+    width: 25%;
+    margin-top: 30px;
+
+    /* border: 1px solid black; */
+    
+}
+.contact-icons> h2{
+    color: white;
+}
+.download-apps{
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.download-apps img{
+    width: 30%;
+    height: 40px;
+}
+.download-apps img:nth-child(2){
+    width: 30%;
+    height: 50px;
+}
+.social-icons{
+    margin-top: 15px;
+}
+.social-icons>h2{
+    color: white;
+}
+.social-icons i{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    width: 10%;
+    /* border: 1px solid black; */
+}
+.footer-logo img{
+    width: 100%;
+
+}
+.footer-nav-links{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.footer-nav-links p{
+    color: white;
+}
+.footer-copyright{
+    width: 30%;
+    /* border: 1px solid black; */
+    color: white;
+
+}
+.footer-copyright h4:nth-child(2){
+    margin-top: 25px;
+}
