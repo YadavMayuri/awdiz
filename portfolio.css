@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#screen{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/beach-img.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90% ;
+    border: 1px solid white;
+    height: 100vh;
+}
+.left-header{
+    width: 25%;
+    color: white;
+    border: 2px solid yellow;
+}
+.right-header{
+    width: 70%;
+    color: white;
+    border: 2px solid blue;
+}
+
+.person-img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+.person-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.intro{
+    width: 100%;
+    
+}
+.intro >h1{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.intro > h3{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    margin:20px 0px;
+}
+.nav-link{
+    border: 1px solid wheat;
+    padding: 12px;
+    text-align: center;
+}
+.nav-link> h4{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
