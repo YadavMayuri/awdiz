@@ -473,6 +473,9 @@
     justify-content: space-around;
     /* border: 2px solid black; */
 }
+.info-topic > h2{
+    color: #33d0a4;
+}
 .info-topic{
     width:20%;
     height: 200px;
