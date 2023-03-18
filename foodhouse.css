@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px; */
+}
+
+#screen{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    background-color: #cccccc;
+}
+#screen >div{
+    width: 85%;
+    margin: auto;
+    border: 1px solid transparent;
+    background-color: white;
+}
+.banner{
+    height: 490px;
+    background-image: url(https://templatemo.com/templates/templatemo_539_simple_house/img/simple-house-01.jpg);
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+}
+
+.header{
+    width: 90%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 390px;
+    
+    
+
+}
+.left-header{
+    /* border: 2px solid white; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.image{
+    /* border: 1px solid red; */
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+   
+
+}
+.image> i{
+    font-size: 55px;
+    margin-left: 10px;
+}
+.lheader-para{
+    letter-spacing: 0.3px;
+    
+}
+.lheader-para>h1{
+    margin-bottom: 4px;
+}
+.right-header{
+    /* border: 2px solid white; */
+    width: 30%;
+    height: 52%;
+    color: white;
+    display: flex;
+    justify-content: space-around ;
+    padding-top: 20px;
+
+}
+.right-header>h2:nth-child(1){
+    border-bottom:2px solid white ;
+}
+
+/* second section */
+
+.content-one{
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid orange; */
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content-one>h2{
+    letter-spacing: 0.4px;
+    font-size: 38px;
+    padding-top: 34px;
+}
+.content-one>p{
+    color: gray;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.menu{
+    /* border: 2px solid blue; */
+    margin-top: 30px;
+    
+}
+.btn{
+    border: 2px solid #2f966b;
+    background-color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: #2f966b;
+}
+.btn:hover{
+    background-color: #2f966b;
+    color: white;
+}
+
+.menu>button:nth-child(1){
+    background-color: #2f966b;
+    color: white;
+}
+
+/* third section */
+.container{
+    /* margin: auto; */
+    width: 90%;
+}
+.third-div{
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+.card{
+    width: 24%;
+    height: 80%;
+    /* border: 1px solid pink; */
+    margin-top: 20px;
+    
+}
+.card-div{
+    width: 90%;
+    border: 1px solid blue;
+}
+.card>h2{
+    color:#87a0ad;
+
+}
+.card>p:nth-child(4){
+    color: #2f966b;
+    font-weight: 300;
+}
+.card-img{
+    width: 230px;
+    height: 230px;
+    /* border: 1px solid black; */
+}
+.card-img > img{
+    width: 100%;
+    height: 100%;
+    transition: transform .2s;
+}
+.card-img > img:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+
+.card> h2{
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+}
+.card>p{
+    font-size: 18px;
+    color: gray;
+}
+
+
+/* section-4 */
+
+
+.forth-div{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid maroon; */
+    height: 100%;
+    /* margin: 20px; */
+    padding: 30px 0px;
+}
+.left-div{
+    width: 45%;
+}
+.div-img{
+    /* border:1px solid blueviolet; */
+    height: 267px;
+    width:532px;
+}
+.div-img > img{
+    width: 100%;
+    height: 100%;
+}
+.right-div{
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid green; */
+    padding: 18px;
+    line-height: 1.4;
+}
+.right-div>p:nth-child(1){
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: #6f7f94;
+}
+.right-div>p:nth-child(2){
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: gray;
+    margin-top: 5px;
+}
+.right-div>button{
+    font-size: 16px;
+    color: gray;
+    background-color: white;
+    padding: 7px 16px;
+    border: 1px solid gray;
+    margin-top: 50px;
+    float: right;
+}
+.right-div>button:hover{
+    background-color: gray;
+    color: white;
+}
+.footer{
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: gray;
+    padding: 20px ;
+    text-align: center;
+
+}
